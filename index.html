@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Juice Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo.png" alt="Juice Shop Logo" />
+        </div>
+
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Produtos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <div class="item active" style="--background: #ea3d41">
+        <div class="tittle">Morango</div>
+        <img
+          src="./img/Morango-refrigerante-foregroundBlur.png"
+          class="fruit"
+        />
+        <img src="./img/Morango-refrigerante.png" class="refri" />
+      </div>
+
+      <div class="item" style="--background: #2d5643">
+        <div class="tittle">Abacate</div>
+        <img
+          src="./img/Abacate-refrigerante-foregroundBlur.png"
+          class="fruit"
+        />
+        <img src="./img/Abacate-refrigerante.png" class="refri" />
+      </div>
+
+      <div class="item hidden" style="--background: #e7a043">
+        <div class="tittle">Laranja</div>
+        <img
+          src="./img/Laranja-refrigerante-foregroundBlur.png"
+          class="fruit"
+        />
+        <img src="./img/Laranja-refrigerante.png" class="refri" />
+      </div>
+
+      <div class="arrow">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+    </main>
+
+    <section id="about" class="about">
+      <div class="about-images">
+        <div class="img-box">
+          <img src="./img/juice.jpeg" alt="" />
+        </div>
+
+        <div class="img-box">
+          <img src="./img/mango-juice-recipe.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2>Da fazenda direto para a sua garrafa.</h2>
+        <p>
+          Acreditamos que a saúde começa com o que consumimos. Selecionamos
+          apenas os melhores ingredientes orgânicos.
+        </p>
+
+        <div class="features">
+          <p>🌿 100% Orgânico</p>
+          <p>❄️ Prensagem a Frio</p>
+          <p>💧 Zero Açúcar</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="products-header">
+        <div>
+          <h2>Nossos Sucos</h2>
+          <p>Escolha o blend perfeito para o seu momento.</p>
+        </div>
+
+        <div class="filters">
+          <button data-filter="all" class="active">Todos</button>
+          <button data-filter="citrus">Citrus</button>
+          <button data-filter="detox">Detox</button>
+          <button data-filter="energy">Energy</button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card" data-category="citrus">
+          <span class="tag orange">Citrus</span>
+          <img src="./img/juice.jpeg" alt="" />
+          <h3>Laranja & Gengibre</h3>
+          <p>Doce e gelado. Ideal para o calor</p>
+        </div>
+
+        <div class="card" data-category="detox">
+          <span class="tag green">Detox</span>
+          <img src="./img/detoxverde.png" alt="Suco Detox Verde" />
+          <h3>Detox Verde</h3>
+          <p>Refrescante e purificante. Ideal para começar o dia.</p>
+        </div>
+
+        <div class="card" data-category="energy">
+          <span class="tag red">Energy</span>
+          <img src="./img/morangoenergy.png" alt="Suco Energia Vermelha" />
+          <h3>Energia Vermelha</h3>
+          <p>Revitalizante e cheio de sabor. Perfeito para dar energia.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>© 2026 Juice Shop. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
